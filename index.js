@@ -1,6 +1,6 @@
 const http = require("http");
 const fs = require("fs");
-// const args = require('minimist')(process.argv.slice(2));
+const args = require('minimist')(process.argv.slice(2));
 
 let homeContent = "";
 let projectContent = "";
@@ -62,5 +62,4 @@ http
         response.end();
       break;
     }
-  // }).listen(args.port);
-}).listen(3000);
+ }).listen(args.port);
